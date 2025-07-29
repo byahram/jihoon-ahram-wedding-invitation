@@ -15,7 +15,7 @@ export default function LoadingSection({ onFinish }: Props) {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    let timeout: number;
+    let timeout: ReturnType<typeof setTimeout>;
 
     if (phase === "waiting") {
       timeout = setTimeout(() => {
