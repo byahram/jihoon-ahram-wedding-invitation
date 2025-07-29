@@ -4,17 +4,20 @@ import MainCoverSection from "./components/section/MainCoverSection";
 import IntroductionSection from "./components/section/IntroductionSection";
 import CalendarSection from "./components/section/CalendarSection";
 import GallerySection from "./components/section/GallerySection";
+import LocationSection from "./components/section/LocationSection";
+import AccountSection from "./components/section/AccountSection";
+import ClosingSection from "./components/section/ClosingSection";
+import FooterSection from "./components/section/FooterSection";
+import FloatingButtons from "./components/common/FloatingButtons";
 import {
   gallery,
   participants,
   transportation,
   weddingInfo,
 } from "./utils/data";
-import LocationSection from "./components/section/LocationSection";
-import AccountSection from "./components/section/AccountSection";
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   return (
     <>
@@ -28,7 +31,10 @@ function App() {
             <GallerySection img={gallery} />
             <LocationSection info={weddingInfo} trans={transportation} />
             <AccountSection parts={participants} />
+            <ClosingSection info={weddingInfo} />
           </main>
+          <FooterSection msg={weddingInfo.message.footer} />
+          <FloatingButtons />
         </>
       )}
     </>
