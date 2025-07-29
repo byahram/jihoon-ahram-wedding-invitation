@@ -1,7 +1,8 @@
 import { useState } from "react";
 import LoadingSection from "./components/section/LoadingSection";
 import MainCoverSection from "./components/section/MainCoverSection";
-import { weddingInfo } from "./utils/data";
+import { participants, weddingInfo } from "./utils/data";
+import IntroductionSection from "./components/section/IntroductionSection";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(true);
@@ -13,6 +14,7 @@ function App() {
         <>
           <main className="relative flex flex-col max-w-md w-full min-h-[100vh] mx-auto bg-background items-center">
             <MainCoverSection info={weddingInfo} />
+            <IntroductionSection contacts={participants} info={weddingInfo} />
           </main>
         </>
       )}
