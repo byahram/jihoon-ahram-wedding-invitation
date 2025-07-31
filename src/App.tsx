@@ -3,7 +3,7 @@ import LoadingSection from "./components/section/LoadingSection";
 import MainCoverSection from "./components/section/MainCoverSection";
 import IntroductionSection from "./components/section/IntroductionSection";
 import CalendarSection from "./components/section/CalendarSection";
-import GallerySection from "./components/section/GallerySection";
+import GallerySlickSection from "./components/section/GallerySlickSection";
 import LocationSection from "./components/section/LocationSection";
 import AccountSection from "./components/section/AccountSection";
 import ClosingSection from "./components/section/ClosingSection";
@@ -28,7 +28,7 @@ function App() {
             <MainCoverSection info={weddingInfo} />
             <IntroductionSection contacts={participants} info={weddingInfo} />
             <CalendarSection info={weddingInfo} />
-            <GallerySection img={gallery} />
+            <GallerySlickSection img={gallery} />
             <LocationSection info={weddingInfo} trans={transportation} />
             <AccountSection parts={participants} />
             <ClosingSection info={weddingInfo} />
