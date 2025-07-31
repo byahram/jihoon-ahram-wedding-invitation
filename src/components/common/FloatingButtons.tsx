@@ -33,8 +33,8 @@ export default function FloatingButtons() {
   };
 
   return (
-    <div className="fixed max-w-md mx-auto bottom-4 left-0 right-0 z-40 px-4">
-      <div className="flex flex-col gap-3 items-end">
+    <div className="fixed bottom-4 right-4 z-40 pointer-events-none">
+      <div className="inline-flex flex-col gap-3 items-end pointer-events-auto">
         {showButtons && (
           <>
             <Button
