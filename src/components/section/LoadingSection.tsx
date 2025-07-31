@@ -62,7 +62,7 @@ export default function LoadingSection({ onFinish }: Props) {
   return (
     <div className="flex items-center justify-center w-full h-screen bg-white">
       <div
-        className={`text-2xl font-semibold text-black tracking-wider whitespace-pre-line text-center leading-loose transition-opacity duration-700 ${
+        className={`text-xl font-semibold text-black tracking-wider whitespace-pre-line text-center leading-loose transition-opacity duration-700 ${
           fadeOut ? "opacity-0" : "opacity-100"
         }`}
       >
