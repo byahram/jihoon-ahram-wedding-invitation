@@ -21,6 +21,7 @@ export default function GallerySlickSection({ img }: GalleryProps) {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
@@ -55,12 +56,12 @@ export default function GallerySlickSection({ img }: GalleryProps) {
           {img.map((src, i) => (
             <div
               key={i}
-              className="!flex justify-center items-center h-[672px] bg-[var(--background2)]"
+              className="!flex justify-center items-center w-full bg-[var(--background2)]"
             >
               <img
                 src={src}
                 alt={`main-${i}`}
-                className="max-h-full max-w-full object-contain"
+                className="w-full h-auto max-h-[80vh] object-contain"
               />
             </div>
           ))}
